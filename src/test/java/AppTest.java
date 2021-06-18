@@ -17,10 +17,10 @@ public class AppTest {
     public static AndroidDriver<MobileElement> driver;
     //1
     @BeforeClass
-    @Parameters("deviceName_")
-    public void setupAppium(String deviceName_) throws MalformedURLException {
+    @Parameters({"deviceName_","port"})
+    public void setupAppium(String deviceName_,String port) throws MalformedURLException {
         //2
-        final String URL_STRING = "http://127.0.0.1:4723/wd/hub";
+        final String URL_STRING = "http://127.0.0.1:"+port+"/wd/hub";
         url = new URL(URL_STRING);
 //3
         capabilities = new DesiredCapabilities();
