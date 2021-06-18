@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="classes" thread-count="2" >
+    <test name="Workflow1">
+        <parameter name="deviceName_" value="emulator-5554"></parameter>
+        <classes>
+            <class name="Flow1"></class>
+        </classes>
+    </test>
+    <test name="Workflow2">
+        <parameter name="deviceName_" value="emulator-5556"></parameter>
+        <classes>
+            <class name="Flow2"></class>
+        </classes>
+    </test>
+
+</suite>
+

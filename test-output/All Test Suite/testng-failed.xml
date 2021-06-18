@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="Workflow1(failed)">
+    <parameter name="deviceName_" value="emulator-5554"/>
+    <classes>
+      <class name="Flow1">
+        <methods>
+          <include name="WorkFLow1"/>
+          <include name="setupAppium"/>
+          <include name="uninstallApp"/>
+        </methods>
+      </class> <!-- Flow1 -->
+    </classes>
+  </test> <!-- Workflow1(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
